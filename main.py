@@ -10,7 +10,6 @@ delay= 60
 detec = []
 carros= 0
 
-	
 def pega_centro(x, y, w, h):
     x1 = int(w / 2)
     y1 = int(h / 2)
@@ -52,7 +51,7 @@ while True:
                 cv2.line(frame1, (25, pos_linha), (1200, pos_linha), (0,127,255), 3)  
                 detec.remove((x,y))
                 print("car is detected : "+str(carros))        
-       
+		
     cv2.putText(frame1, "VEHICLE COUNT : "+str(carros), (450, 70), cv2.FONT_HERSHEY_SIMPLEX, 2, (0, 0, 255),5)
     cv2.imshow("Video Original" , frame1)
     cv2.imshow("Detectar",dilatada)
