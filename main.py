@@ -4,13 +4,9 @@ from time import sleep
 
 largura_min=80 
 altura_min=80 
-
 offset=6 
-
 pos_linha=550 
-
 delay= 60 
-
 detec = []
 carros= 0
 
